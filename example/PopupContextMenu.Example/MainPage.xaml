@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PopupContextMenu.Example.MainPage"
+             xmlns:controls="clr-namespace:PopupContextMenu;assembly=PopupContextMenu">
+
+    <RelativeLayout>
+        <controls:ContextMenuButton
+            WidthRequest="50"
+            HeightRequest="50"
+            ItemsContainerHeight="120"
+            ItemsContainerWidth="110"
+            BackgroundColor="Gray"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0, Constant=0}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}">
+            <controls:ContextMenuButton.Items>
+                <x:Array Type="{x:Type MenuItem}">
+                    <MenuItem Text="Command 1"/>
+                    <MenuItem Text="Command 2"/>
+                    <MenuItem Text="Command 3"/>
+                </x:Array>
+            </controls:ContextMenuButton.Items>
+        </controls:ContextMenuButton>
+
+        <controls:ContextMenuButton
+            WidthRequest="50"
+            HeightRequest="50"
+            ItemsContainerHeight="120"
+            ItemsContainerWidth="110"
+            BackgroundColor="Green"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0, Constant=0}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-50}">
+            <controls:ContextMenuButton.Items>
+                <x:Array Type="{x:Type MenuItem}">
+                    <MenuItem Text="Command 1"/>
+                    <MenuItem Text="Command 2"/>
+                    <MenuItem Text="Command 3"/>
+                </x:Array>
+            </controls:ContextMenuButton.Items>
+        </controls:ContextMenuButton>
+
+        <controls:ContextMenuButton
+            WidthRequest="50"
+            HeightRequest="50"
+            ItemsContainerHeight="120"
+            ItemsContainerWidth="110"
+            BackgroundColor="Red"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-50}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=0}">
+            <controls:ContextMenuButton.Items>
+                <x:Array Type="{x:Type MenuItem}">
+                    <MenuItem Text="Command 1"/>
+                    <MenuItem Text="Command 2"/>
+                    <MenuItem Text="Command 3"/>
+                </x:Array>
+            </controls:ContextMenuButton.Items>
+        </controls:ContextMenuButton>
+
+        <controls:ContextMenuButton
+            WidthRequest="50"
+            HeightRequest="50"
+            ItemsContainerHeight="120"
+            ItemsContainerWidth="110"
+            BackgroundColor="Blue"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-50}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-50}">
+            <controls:ContextMenuButton.Items>
+                <x:Array Type="{x:Type MenuItem}">
+                    <MenuItem Text="Command 1"/>
+                    <MenuItem Text="Command 2"/>
+                    <MenuItem Text="Command 3"/>
+                </x:Array>
+            </controls:ContextMenuButton.Items>
+        </controls:ContextMenuButton>
+
+        <controls:ContextMenuButton
+            WidthRequest="50"
+            HeightRequest="50"
+            ItemsContainerHeight="120"
+            ItemsContainerWidth="110"
+            BackgroundColor="Black"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0, Constant=100}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-150}">
+            <controls:ContextMenuButton.Items>
+                <x:Array Type="{x:Type MenuItem}">
+                    <MenuItem Text="Command 1"/>
+                    <MenuItem Text="Command 2"/>
+                    <MenuItem Text="Command 3"/>
+                </x:Array>
+            </controls:ContextMenuButton.Items>
+        </controls:ContextMenuButton>
+
+        <controls:ContextMenuButton
+            WidthRequest="50"
+            HeightRequest="50"
+            ItemsContainerHeight="120"
+            ItemsContainerWidth="110"
+            BackgroundColor="Orange"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-150}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0, Constant=100}">
+            <controls:ContextMenuButton.Items>
+                <x:Array Type="{x:Type MenuItem}">
+                    <MenuItem Text="Command 1"/>
+                    <MenuItem Text="Command 2"/>
+                    <MenuItem Text="Command 3"/>
+                </x:Array>
+            </controls:ContextMenuButton.Items>
+        </controls:ContextMenuButton>
+
+        <controls:ContextMenuButton
+            WidthRequest="50"
+            HeightRequest="50"
+            ItemsContainerHeight="120"
+            ItemsContainerWidth="110"
+            BackgroundColor="Indigo"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-25}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-25}">
+            <controls:ContextMenuButton.Items>
+                <x:Array Type="{x:Type MenuItem}">
+                    <MenuItem Text="Command 1"/>
+                    <MenuItem Text="Command 2"/>
+                    <MenuItem Text="Command 3"/>
+                </x:Array>
+            </controls:ContextMenuButton.Items>
+        </controls:ContextMenuButton>
+    </RelativeLayout>
+
+</ContentPage>

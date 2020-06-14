@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    mc:Ignorable="d"
+    x:Class="PopupContextMenu.ContextMenuPage"
+    x:Name="ContextMenuPopup">
+    <Frame
+        x:Name="MainFrame"
+        HorizontalOptions="Start"
+        VerticalOptions="Start"
+        BackgroundColor="White"
+        Padding="0"
+        CornerRadius="2">
+        <Frame.GestureRecognizers>
+            <TapGestureRecognizer Tapped="PageTapGestureRecognizer_Tapped"/>
+        </Frame.GestureRecognizers>
+        <ListView
+            RowHeight="30"
+            Margin="15"
+            SeparatorVisibility="None"
+            VerticalScrollBarVisibility="Never"
+            ItemsSource="{Binding Items, Source={Reference ContextMenuPopup}}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ItemTapGestureRecognizer_Tapped"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="Center"
+                                Text="{Binding Text}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Frame>
+</pages:PopupPage>
