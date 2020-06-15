@@ -1,8 +1,6 @@
 # Xamarin Forms Popup Context Menu
 Popup Context Menu for Xamarin Forms
 
-**!!! Android only at the moment !!!**
-
 ## Implementation Notes
 
 This is an example of a popup menu implemented in Xamarin Forms based on Rg.Plugins.Popup (https://github.com/rotorgames/Rg.Plugins.Popup)
@@ -45,4 +43,8 @@ The PopupContextMenu itself is transparent Rg.Popup page with a Frame that conta
 ![Top Right Positioning](https://github.com/luchivanich/PopupContextMenu/blob/master/screenshots/03.topright.png)
 
 ![Top Left Positioning](https://github.com/luchivanich/PopupContextMenu/blob/master/screenshots/04.topleft.png)
+
+## Known Issues
+
+There is a problem with context menu position when Safe Area Layout feature is involved (https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/ios/page-safe-area-layout). Context Menu page doesn't know about Safe Area Insets of the  underlying page.
 
